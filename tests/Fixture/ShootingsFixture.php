@@ -45,9 +45,9 @@ class ShootingsFixture extends TestFixture
         [
             'id' => 1,
             'customer_id' => 1,
-            'date' => '2015-05-17 12:26:52',
-            'created' => '2015-05-17 12:26:52',
-            'modified' => '2015-05-17 12:26:52'
+            'date' => '2015-05-18 15:48:39',
+            'created' => '2015-05-18 15:48:39',
+            'modified' => '2015-05-18 15:48:39'
         ],
     ];
 }

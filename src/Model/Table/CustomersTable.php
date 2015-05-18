@@ -43,12 +43,12 @@ class CustomersTable extends Table
             ->allowEmpty('id', 'create');
             
         $validator
-            ->requirePresence('name', 'create')
-            ->notEmpty('name');
+            ->requirePresence('surname', 'create')
+            ->notEmpty('surname');
             
         $validator
-            ->requirePresence('lastname', 'create')
-            ->notEmpty('lastname');
+            ->requirePresence('forename', 'create')
+            ->notEmpty('forename');
             
         $validator
             ->add('email', 'valid', ['rule' => 'email'])

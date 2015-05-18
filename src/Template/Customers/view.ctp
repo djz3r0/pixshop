@@ -13,10 +13,10 @@
     <h2><?= h($customer->name) ?></h2>
     <div class="row">
         <div class="large-5 columns strings">
-            <h6 class="subheader"><?= __('Name') ?></h6>
-            <p><?= h($customer->name) ?></p>
-            <h6 class="subheader"><?= __('Lastname') ?></h6>
-            <p><?= h($customer->lastname) ?></p>
+            <h6 class="subheader"><?= __('Surname') ?></h6>
+            <p><?= h($customer->surname) ?></p>
+            <h6 class="subheader"><?= __('Forename') ?></h6>
+            <p><?= h($customer->forename) ?></p>
             <h6 class="subheader"><?= __('Email') ?></h6>
             <p><?= h($customer->email) ?></p>
         </div>

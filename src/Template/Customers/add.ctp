@@ -11,8 +11,8 @@
     <fieldset>
         <legend><?= __('Add Customer') ?></legend>
         <?php
-            echo $this->Form->input('name');
-            echo $this->Form->input('lastname');
+            echo $this->Form->input('surname');
+            echo $this->Form->input('forename');
             echo $this->Form->input('email');
         ?>
     </fieldset>

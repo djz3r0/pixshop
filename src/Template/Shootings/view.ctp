@@ -14,7 +14,7 @@
     <div class="row">
         <div class="large-5 columns strings">
             <h6 class="subheader"><?= __('Customer') ?></h6>
-            <p><?= $shooting->has('customer') ? $this->Html->link($shooting->customer->name, ['controller' => 'Customers', 'action' => 'view', $shooting->customer->id]) : '' ?></p>
+            <p><?= $shooting->has('customer') ? $this->Html->link($shooting->customer->surname.', '.$shooting->customer->forename, ['controller' => 'Customers', 'action' => 'view', $shooting->customer->id]) : '' ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Id') ?></h6>

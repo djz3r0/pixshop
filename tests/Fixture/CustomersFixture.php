@@ -18,8 +18,8 @@ class CustomersFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'name' => ['type' => 'string', 'length' => 160, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
-        'lastname' => ['type' => 'string', 'length' => 160, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'surname' => ['type' => 'string', 'length' => 160, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'forename' => ['type' => 'string', 'length' => 160, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'email' => ['type' => 'string', 'length' => 160, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
@@ -41,11 +41,11 @@ class CustomersFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'name' => 'Lorem ipsum dolor sit amet',
-            'lastname' => 'Lorem ipsum dolor sit amet',
+            'surname' => 'Lorem ipsum dolor sit amet',
+            'forename' => 'Lorem ipsum dolor sit amet',
             'email' => 'Lorem ipsum dolor sit amet',
-            'created' => '2015-05-17 12:25:22',
-            'modified' => '2015-05-17 12:25:22'
+            'created' => '2015-05-18 15:47:45',
+            'modified' => '2015-05-18 15:47:45'
         ],
     ];
 }

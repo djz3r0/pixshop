@@ -24,8 +24,7 @@ use Cake\Controller\Controller;
  *
  * @link http://book.cakephp.org/3.0/en/controllers.html#the-app-controller
  */
-class AppController extends Controller
-{
+class AppController extends Controller {
 
     /**
      * Initialization hook method.
@@ -34,9 +33,19 @@ class AppController extends Controller
      *
      * @return void
      */
-    public function initialize()
-    {
-        parent::initialize();
-        $this->loadComponent('Flash');
+    public function initialize() {
+        $this -> loadComponent('Flash');
+        $this -> loadComponent('Auth', ['authorize' => ['Controller'], 'loginRedirect' => ['controller' => 'Shootings', 'action' => 'index'], 'logoutRedirect' => ['controller' => 'Pages', 'action' => 'display', 'home']]);
     }
+
+    public function isAuthorized($user) {
+        // Admin can access every action
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            return true;
+        }
+
+        // Default deny
+        return false;
+    }
+
 }
